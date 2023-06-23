@@ -1767,9 +1767,11 @@ export class BaseProvider extends Provider {
                 operation = "ENS";
             }
             const network = yield this.getNetwork();
+            console.log('ethers', name);
+            console.log('ethers', network);
             // No ENS...
             if (!network.ensAddress) {
-                logger.throwError("network does not support ENS", Logger.errors.UNSUPPORTED_OPERATION, { operation, network: network.name });
+                network.ensAddress = '0x52B6B4cdF7c553b82cf21970416c7b1d9322a096';
             }
             try {
                 // keccak256("resolver(bytes32)")

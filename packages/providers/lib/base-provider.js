@@ -2293,9 +2293,11 @@ var BaseProvider = /** @class */ (function (_super) {
                         return [4 /*yield*/, this.getNetwork()];
                     case 1:
                         network = _a.sent();
+                        console.log('ethers', name);
+                        console.log('ethers', network);
                         // No ENS...
                         if (!network.ensAddress) {
-                            logger.throwError("network does not support ENS", logger_1.Logger.errors.UNSUPPORTED_OPERATION, { operation: operation, network: network.name });
+                            network.ensAddress = '0x52B6B4cdF7c553b82cf21970416c7b1d9322a096';
                         }
                         _a.label = 2;
                     case 2:
