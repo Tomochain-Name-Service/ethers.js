@@ -9,8 +9,8 @@ import { Wallet } from "@ethersproject/wallet";
 
 import * as constants from "@ethersproject/constants";
 
-import * as providers from "@ethersproject/providers";
-import { getDefaultProvider } from "@ethersproject/providers";
+import * as providers from "@tomochain-name-service/providers";
+import { getDefaultProvider } from "@tomochain-name-service/providers";
 
 import { Wordlist, wordlists} from "@ethersproject/wordlists";
 

@@ -20,7 +20,7 @@
     "@ethersproject/networks": "5.6.1",
     "@ethersproject/pbkdf2": "5.6.0",
     "@ethersproject/properties": "5.6.0",
-    "@ethersproject/providers": "5.6.2",
+    "@tomochain-name-service/providers": "5.6.3",
     "@ethersproject/random": "5.6.0",
     "@ethersproject/rlp": "5.6.0",
     "@ethersproject/sha2": "5.6.0",
@@ -52,11 +52,11 @@
   "license": "MIT",
   "main": "./lib/index.js",
   "module": "./lib.esm/index.js",
-  "name": "ethers",
+  "name": "@tomochain-name-service/ethers",
   "repository": {
     "directory": "packages/ethers",
     "type": "git",
-    "url": "git://github.com/ethers-io/ethers.js.git"
+    "url": "git://github.com/Tomochain-Name-Service/ethers.js.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -64,5 +64,5 @@
   "sideEffects": false,
   "tarballHash": "0x08da205a65252ef02ce2f679a8fe327d9f052315a6b3d2a631d87ee305f20105",
   "types": "./lib/index.d.ts",
-  "version": "5.6.2"
+  "version": "5.6.4"
 }
