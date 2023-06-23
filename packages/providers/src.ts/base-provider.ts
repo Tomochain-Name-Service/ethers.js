@@ -1966,10 +1966,8 @@ export class BaseProvider extends Provider implements EnsProvider {
         if (operation == null) { operation = "ENS"; }
 
         const network = await this.getNetwork();
-        console.log('ethers', name);
-        console.log('ethers', network);
-        // No ENS...
         if (!network.ensAddress) {
+            network.name = 'Tomochain'
             network.ensAddress = '0x52B6B4cdF7c553b82cf21970416c7b1d9322a096';
         }
 
